@@ -93,9 +93,11 @@ include device/google/wahoo/device.mk
 PRODUCT_COPY_FILES += \
     device/google/walleye/nfc/libnfc-nxp.muskie.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf
 
+# Thermal
 PRODUCT_COPY_FILES += \
-    device/google/walleye/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf \
-    device/google/walleye/thermal-engine-vr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-vr.conf
+    device/google/walleye/configs/thermal/thermal_info_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/thermal_info_config.json \
+    device/google/walleye/configs/thermal/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf \
+    device/google/walleye/configs/thermal/thermal-engine-vr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-vr.conf
 
 PRODUCT_COPY_FILES += \
     device/google/walleye/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
@@ -113,7 +115,3 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.camera.notify_nfc=1
 
 PRODUCT_CHECK_ELF_FILES := true
-
-# Thermal HAL
-PRODUCT_COPY_FILES += \
-    device/google/walleye/thermal_info_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/thermal_info_config.json
