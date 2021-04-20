@@ -100,8 +100,9 @@ PRODUCT_COPY_FILES += \
     device/google/walleye/configs/thermal/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf \
     device/google/walleye/configs/thermal/thermal-engine-vr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-vr.conf
 
+# Powerhint
 PRODUCT_COPY_FILES += \
-    device/google/walleye/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
+    device/google/walleye/configs/power/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
 
 # Wifi configuration file
 PRODUCT_COPY_FILES += \
