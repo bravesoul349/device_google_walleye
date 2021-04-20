@@ -90,8 +90,9 @@ PRODUCT_COPY_FILES += \
 
 include device/google/wahoo/device.mk
 
+# NFC config
 PRODUCT_COPY_FILES += \
-    device/google/walleye/nfc/libnfc-nxp.muskie.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf
+    device/google/walleye/configs/nfc/libnfc-nxp.muskie.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf
 
 # Thermal
 PRODUCT_COPY_FILES += \
