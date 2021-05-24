@@ -15,7 +15,8 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_walleye.mk
+    $(LOCAL_DIR)/havoc_walleye.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_walleye-userdebug
+    havoc_walleye-userdebug \
+    havoc_walleye-eng
